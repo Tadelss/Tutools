@@ -1,8 +1,11 @@
 {
-  "name": "tutools",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+   "name": "tutools",
+  "version": "0.1.0",
+  "description": "Vue 3 components for tutorials and productivity (keyboard overlays, command palette, hints)",
+  "main": "dist/tutools.umd.js",
+  "module": "dist/tutools.esm.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,6 +13,12 @@
   },
   "dependencies": {
     "vue": "^3.5.13"
+  },
+  "keywords": ["vue3", "components", "command-palette", "keyboard-shortcuts", "tutorial"],
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.3",
