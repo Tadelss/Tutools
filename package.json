@@ -1,6 +1,6 @@
 {
    "name": "tutools-ui",
-   "version": "1.0.2",
+   "version": "1.0.3",
    "description": "Vue 3 components for tutorials and productivity (keyboard overlays, command palette, hints)",
    "main": "dist/tutools.umd.js",
    "module": "dist/tutools.esm.js",
