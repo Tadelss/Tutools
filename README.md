@@ -32,7 +32,7 @@ And you're good to go!
 ## 🔧 Usage
 
 ### 1. Register globally (optional)
-```vue
+```js
 import { createApp } from 'vue'
 import App from './App.vue'
 import Tutools from 'tutools-ui'
@@ -41,7 +41,7 @@ createApp(App).use(Tutools).mount('#app')
 ```
 
 ### 2. Or import components on demand
-```vue
+```js
 import { ShortcutOverlay, StepTooltip } from 'tutools-ui'
 ```
 ---
