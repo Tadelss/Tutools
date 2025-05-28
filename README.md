@@ -21,7 +21,9 @@ A Vue 3 component toolkit designed to help you build in-app tutorials, onboardin
 ## 📦 Installation
 In your terminal write:
 
+```bash
 npm install tutools-ui
+```
 
 And you're good to go!
 
@@ -30,15 +32,18 @@ And you're good to go!
 ## 🔧 Usage
 
 ### 1. Register globally (optional)
+```vue
 import { createApp } from 'vue'
 import App from './App.vue'
 import Tutools from 'tutools-ui'
 
 createApp(App).use(Tutools).mount('#app')
+```
 
 ### 2. Or import components on demand
+```vue
 import { ShortcutOverlay, StepTooltip } from 'tutools-ui'
-
+```
 ---
 
 ## 🧱 Components
@@ -46,42 +51,45 @@ import { ShortcutOverlay, StepTooltip } from 'tutools-ui'
 ### ShortcutOverlay
 Display all active keybindings in an overlay.
 
-Example:
-
+**Example:**
+```vue
 <ShortcutOverlay :shortcuts="[{ keys: 'Ctrl+S', description: 'Save' }]" />
+```
 
 ### CommandPalette
 A fuzzy-search popup for quick commands (like VS Code's ⌘+P).
 
-Example:
-
+**Example:**
+```vue
 <CommandPalette :commands="[{ name: 'Open Settings', handler: () => {} }]" />
+```
 
 ### ShortcutHint
 Display a small keyboard shortcut hint next to an element.
 
-Example:
-
+**Example:**
+```vue
 <ShortcutHint keys="Ctrl+P" />
+```
 
 ### StepTooltip
 Simple hover or auto-triggered tooltip for guiding steps.
 
-Example:
-
+**Example:**
+```vue
 <StepTooltip text="Click here to begin" position="top">
   <button>Start</button>
 </StepTooltip>
-
+```
 ### ContextGuide
 Clickable question mark that shows contextual help.
 
-Example:
-
+**Example:**
+```vue
 <ContextGuide text="This button saves your settings.">
   <button>Save</button>
 </ContextGuide>
-
+```
 ---
 
 ## 📜 License
