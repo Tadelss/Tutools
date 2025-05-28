@@ -48,7 +48,7 @@ import { ShortcutOverlay, StepTooltip } from 'tutools-ui'
 
 ## 🧱 Components
 
-### ShortcutOverlay
+### 🔑ShortcutOverlay
 Display all active keybindings in an overlay.
 
 **Example:**
@@ -56,7 +56,7 @@ Display all active keybindings in an overlay.
 <ShortcutOverlay :shortcuts="[{ keys: 'Ctrl+S', description: 'Save' }]" />
 ```
 
-### CommandPalette
+### ⚡CommandPalette
 A fuzzy-search popup for quick commands (like VS Code's ⌘+P).
 
 **Example:**
@@ -64,7 +64,7 @@ A fuzzy-search popup for quick commands (like VS Code's ⌘+P).
 <CommandPalette :commands="[{ name: 'Open Settings', handler: () => {} }]" />
 ```
 
-### ShortcutHint
+### 💡ShortcutHint
 Display a small keyboard shortcut hint next to an element.
 
 **Example:**
@@ -72,7 +72,7 @@ Display a small keyboard shortcut hint next to an element.
 <ShortcutHint keys="Ctrl+P" />
 ```
 
-### StepTooltip
+### 🎯StepTooltip
 Simple hover or auto-triggered tooltip for guiding steps.
 
 **Example:**
@@ -81,7 +81,7 @@ Simple hover or auto-triggered tooltip for guiding steps.
   <button>Start</button>
 </StepTooltip>
 ```
-### ContextGuide
+### ❓ContextGuide
 Clickable question mark that shows contextual help.
 
 **Example:**
