@@ -37,6 +37,16 @@
         </StepTooltip>
       </div>
     </section>
+
+    <section class="demo-box">
+      <h2>❓ Context Guide</h2>
+      <p>Click the floating question mark to reveal help text:</p>
+
+      <ContextGuide text="This button saves your settings. You should do this often.">
+        <button class="demo-button">Save Settings</button>
+      </ContextGuide>
+    </section>
+
   </main>
 </template>
 
@@ -45,6 +55,7 @@ import ShortcutOverlay from './components/ShortcutOverlay.vue'
 import CommandPalette from './components/CommandPalette.vue'
 import ShortcutHint from './components/ShortcutHint.vue'
 import StepTooltip from './components/StepTooltip.vue'
+import ContextGuide from './components/ContextGuide.vue'
 
 const shortcuts = [
   { keys: 'Ctrl+S', description: 'Save changes' },
