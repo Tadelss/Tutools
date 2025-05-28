@@ -18,8 +18,24 @@
     <section class="demo-box">
       <h2>💡 Shortcut Hint</h2>
       <button @click="save" class="demo-button">
-        Save <ShortcutHint keys="Ctrl+S" />
+        Save
+        <ShortcutHint keys="Ctrl+S" />
       </button>
+    </section>
+
+    <section class="demo-box">
+      <h2>🎯 Step Tooltip</h2>
+      <p>Hover over or auto-show a tooltip on any element:</p>
+
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <StepTooltip text="Click to save your progress" position="top">
+          <button class="demo-button">Save</button>
+        </StepTooltip>
+
+        <StepTooltip text="This option is required" position="right" :autoShow="true">
+          <span class="tag">Required</span>
+        </StepTooltip>
+      </div>
     </section>
   </main>
 </template>
@@ -28,6 +44,7 @@
 import ShortcutOverlay from './components/ShortcutOverlay.vue'
 import CommandPalette from './components/CommandPalette.vue'
 import ShortcutHint from './components/ShortcutHint.vue'
+import StepTooltip from './components/StepTooltip.vue'
 
 const shortcuts = [
   { keys: 'Ctrl+S', description: 'Save changes' },
@@ -53,22 +70,26 @@ function save() {
   max-width: 700px;
   margin: auto;
 }
+
 h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+
 .demo-box {
   margin-bottom: 2.5rem;
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
 }
+
 kbd {
   background: #eee;
   padding: 2px 6px;
   border-radius: 4px;
   font-family: monospace;
 }
+
 .demo-button {
   font-size: 1rem;
   padding: 0.5rem 1rem;
@@ -80,5 +101,12 @@ kbd {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.tag {
+  background-color: #eee;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
 }
 </style>
